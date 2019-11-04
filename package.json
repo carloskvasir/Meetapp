@@ -1,12 +1,16 @@
 {
-  "name": "Meetapp",
+  "name": "meetapp",
   "version": "1.0.0",
   "description": "Agregador de eventos para desenvolvedores.",
-  "main": "server.js",
+  "main": "src/server.js",
   "repository": "git@github.com:CarlosKvasir/Meetapp.git",
   "author": "Carlos Lima (Kvasir) <carloskvasir@gmail.com>",
   "license": "MPL-2.0",
   "private": false,
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
