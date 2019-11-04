@@ -1,0 +1,10 @@
+{
+  "name": "Meetapp",
+  "version": "1.0.0",
+  "description": "Agregador de eventos para desenvolvedores.",
+  "main": "index.js",
+  "repository": "git@github.com:CarlosKvasir/Meetapp.git",
+  "author": "Carlos Lima (Kvasir) <carloskvasir@gmail.com>",
+  "license": "MPL-2.0",
+  "private": false
+}
