@@ -4,7 +4,7 @@ module.exports = {
   username: 'postgres',
   password: 'docker',
   database: 'meetapp',
-  defines: {
+  define: {
     timestamps: true,
     underscored: true,
     underscoredAll: true,
