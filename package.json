@@ -8,7 +8,7 @@
   "license": "MPL-2.0",
   "private": false,
   "scripts": {
-    "start": "node src/server.js",
+    "start": "sucrase-node src/server.js",
     "dev": "nodemon",
     "style-fix": "eslint --fix src/**/*.js"
   },
