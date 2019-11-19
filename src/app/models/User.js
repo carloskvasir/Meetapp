@@ -9,7 +9,7 @@ class User extends Model {
         password_hash: Sequelize.STRING,
       },
       {
-        connection,
+        sequelize: connection,
       }
     );
   }
