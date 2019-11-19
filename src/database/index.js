@@ -18,3 +18,5 @@ class Database {
     models.map(model => model.init(this.connection));
   }
 }
+
+export default new Database();
