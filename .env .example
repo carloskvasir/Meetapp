@@ -1,0 +1,12 @@
+# Meetapp configs
+
+# Database
+DB_HOST=docker
+DB_USER=postgres
+DB_PASS=docker
+DB_NAME=meetapp
+
+# Auth
+ROUNDS_N: 8
+JWT_VALID:7d
+JWT_KEY:
