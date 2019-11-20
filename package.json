@@ -10,7 +10,8 @@
   "scripts": {
     "start": "sucrase-node src/server.js",
     "dev": "nodemon",
-    "style-fix": "eslint --fix src/**/*.js"
+    "style-fix": "eslint --fix src/**/*.js",
+    "start-test": "NODE_ENV=test sucrase-node src/server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
