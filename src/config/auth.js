@@ -1,5 +1,9 @@
+require('dotenv').config({
+  path: process.env.NODE_ENV === 'test' ? '.env.test' : '.env',
+});
+
 module.exports = {
-  nRounds: 8,
-  expiresIn: '7d',
-  secretKey: '9e625c2f9dad0710d6c388bbecd621b2',
+  nRounds: Number(process.env.ROUNDS_N),
+  expiresIn: process.env.JWT_VALID,
+  secretKey: process.env.JWT_KEY,
 };
