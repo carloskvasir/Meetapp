@@ -10,11 +10,14 @@ class SessionController {
     const user = await User.findOne({ where: { email } });
 
     // This user exists?
-    if (!user) return res.status(401).json({ error: 'User not found 😒' });
+    if (!user) {
+      return res.status(401).json({ error: 'User not found 😒' });
+    }
 
     // This is right pass?
-    if (!(await user.checkThisPassword(password)))
-      return res.status(401).json({ error: 'Pass does not match' });
+    if (!(await user.checkThisPassword(password))) {
+      return res.status(401).json({ error: 'Password does not match' });
+    }
 
     const { id, name } = user;
 
