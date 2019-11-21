@@ -21,11 +21,15 @@ class SessionController {
 
     const { id, name } = user;
 
+    console.log(authConfig.secretKey);
     return res.json({
-      user: { id, name, email },
-
+      user: {
+        id,
+        name,
+        email,
+      },
       // Data for jwt
-      token: jwt.sing({ id }, authConfig.secretKey, {
+      token: jwt.sign({ id }, authConfig.secretKey, {
         expiresIn: authConfig.expiresIn,
       }),
     });
